@@ -6,6 +6,7 @@ gem "coderay", "~> 1.1.0"
 gem "fastercsv", "~> 1.5.0", :platforms => [:mri_18, :mingw_18, :jruby]
 gem "builder", "3.0.0"
 gem "mime-types"
+gem "rails_12factor"
 
 # Optional gem for LDAP authentication
 group :ldap do
@@ -80,6 +81,13 @@ end
 group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
+end
+
+group :assets do
+  gem 'therubyracer'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
 end
 
 group :test do
