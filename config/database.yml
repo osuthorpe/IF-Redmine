@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dev_redmine_app
+  template: template0
+  pool: 5
+  username: root
+  password: root
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: test_redmine_app
+  template: template0
+  pool: 5
+  username: root
+  password: root
